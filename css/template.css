@@ -1,0 +1,443 @@
+/* 固定底部信息*/
+body,
+   html,
+   ul,
+   li,h1,h1,h2,h3,h4,h5,h6 {
+       list-style: none;
+       margin: 0;
+       padding: 0;
+
+   }
+   img,input,button{
+    border: 0;
+    outline: 0;
+   }
+   a{
+    text-decoration: none;
+    color: #999;
+   }
+   /*首页*/
+
+   body,
+   html {
+       width: 100%;
+       overflow-x:hidden;
+       font-family: PingFangSC-Regular;
+       color: #666666;
+   }
+.nav{
+       background: #c12929;
+       width: 100%;
+       height: 49px;
+       position: fixed;
+       left: 0;
+       bottom: 0;
+       display: flex;
+       justify-content: space-around;
+} 
+.nav li{
+      font-size: 15px;
+       display: block;
+       color: #fff;
+       line-height: 49px;
+       font-family: "微软雅黑";    
+       width: 33.3%;
+          cursor: pointer;
+      text-align: center;
+}
+
+/*主体*/
+.container{
+      width: 100%;
+    padding-bottom:60px;
+  position: absolute;
+}
+.cover{
+    width: 100%;
+    background: #ccc;
+}
+.cover img{
+    width: 100%;
+    display: block;
+}
+.title{
+   font-size: 16px;    
+       margin: 10px;
+    margin-left: 5%;
+}
+.table{
+        width: 90%;
+    margin-left: 5%;    
+    border-radius: 5px;
+    background: #598bff;
+    color: #fff;
+}
+.table li{
+   border-bottom: 1px solid #ccc;
+    overflow: hidden;
+    height:30px;
+    line-height: 30px;
+
+}
+.table li h2{
+    float: left;
+    font-size: 12px;
+    width: 33.3%;
+    text-align: center;
+}
+.table li span{
+    float: left;
+    font-size: 12px;
+    width: 33.3%;
+    text-align: center;
+}
+.rule{
+            width: 90%;
+        margin-left: 5%; 
+        margin-top: 10px;
+}
+.rule li{
+      font-size: 12px;
+    color: #333;    
+    line-height: 30px;
+}
+.rule li span{
+
+}
+
+.search{
+           width: 90%;
+    margin-left: 5%;
+}
+.search input{
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #598bff;
+    border-radius: 5px 0px 0px 5px;
+}
+.search button{
+      height: 35px;
+    line-height: 31px;
+    padding: 0px 10px;
+    background: #598bff;
+    color: #fff;
+    margin-left: -5px;
+    border-radius: 0px 5px 5px 0;
+}
+
+.pank{
+        width: 90%;
+    margin-left: 5%;
+}
+.pank h2{
+    font-size: 14px;
+    margin: 10px 0;
+    background: #ff0;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+        color: #fff;
+}
+.list{
+       width: 90%;
+       margin-left:5%;
+       margin-top:40px;
+}
+.list li{
+    line-height: 30px;
+}
+.list li:nth-child(odd){
+    background: #C9E5F5;
+    color: #000;
+
+}
+.list li:nth-child(even){
+        background: #E2F0E4;
+    color: #000;
+}
+.list h2{
+    width:100%;
+  font-size: 12px;
+  font-weight: bold;    
+    background: #C9E5F5;
+    color: #000;
+    height: 30px;
+    line-height: 30px;
+        margin: 0;
+}
+.list h2 span{
+    width:32.3%;
+    display: inline-block;
+    text-align: center;
+}
+.list li span{
+      width:32.3%;
+    display: inline-block;
+   text-align: center;
+}
+
+/*报名区域*/
+.mask{
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #303332;
+    width: 100%;
+    height: 100%;
+}
+.enterarea{
+    margin: 40px auto;
+    width: 80%;
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
+.enterarea h2{
+       color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 18px;
+}
+.enterarea .info{
+       width: 90%;
+    margin-left: 5%;
+    font-size: 14px;
+}
+.enterarea .info li{
+       line-height: 30px;
+}
+.info li span{
+       color: #868686;
+}
+.info li input[type="text"]{
+       height: 24px;
+    line-height: 24px;
+}
+.info .add{
+  width: 100px;
+    height: 100px;
+    background: url(53c5f34c8b8d2.png) #fff;
+    background-size: 100%;
+    border-radius: 5px;
+    float:left;
+}
+.info .add input[type="file"]{
+       width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.info .preview{
+  width: 100px;
+    height: 100px;
+    background: #fff;
+    border-radius: 5px;
+    float:left;
+   margin-left: 10px;
+    position: relative;
+
+}
+.info .preview img{
+  position: relative;
+}
+.filearea{
+   overflow: hidden;
+}
+.filearea span.del{
+  position: absolute;
+  left: 0;
+      width: 100%;
+    height: 100%;
+  display: block;
+  top: 0;
+  background: url(12.png) no-repeat;
+      background-size: 100%;
+      opacity: 0.6;
+}
+.comments{
+      margin-top: 10px;
+}
+.comments textarea{
+    width: 90%;
+    height: 100px;
+    outline: none;
+    resize: none;
+    border-radius: 5px;
+}
+.confrim{
+    display: block;
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    background: #ae3838;
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    left: 10%;
+    bottom: 80px;
+}
+
+
+.detail{
+  width: 90%;
+  margin-left:5%;
+  margin-top: 40px;
+}
+.detail h2{
+    font-size: 14px;
+    margin: 10px 0;
+}
+.detail p{
+   font-size: 12px;
+}
+.admin{
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom: 60px;
+        margin-top: 40px;
+}
+.admin .condition{
+
+}
+.admin .picInfo{
+ font-size: 13px;
+}
+.admin .picInfo li{
+
+}
+.admin .picInfo li span{
+
+}
+.previewImg{
+  
+}
+.previewImg img{
+
+}
+.intro span{
+
+}
+.intro p{
+
+}
+
+/*瀑布流*/
+.vote{
+  width:90%;
+  margin-left:5%;
+  margin-top: 10px;
+  margin-bottom: 70px;
+  position: relative;}
+}
+#main{
+   width:50%;
+   padding:5px 2%;
+   box-sizing: border-box;
+   float: left;
+}
+#main li{
+  width: 50%;
+  padding:5px 2%;
+  box-sizing: border-box;
+  float: left;
+}
+#main li img{
+  width:100%;
+    height: auto;
+  display: block;
+}
+.voteDetail{
+}
+.voteDetail .name{
+      overflow: hidden;
+
+}
+.voteDetail .name span{
+  font-size: 12px;
+  height: 30px;
+  line-height: 30px;
+}
+.voteDetail .name .left{
+       float: left;
+}
+.voteDetail .name .right{
+   float: right;
+}
+.voteDetail .voteBtn{
+    width: 100%;
+   height: 30px;
+  line-height: 30px;
+    background: #c12929;
+    color: #fff;
+    padding: 0;
+}
+.hide{
+  display: none;
+}
+.icon-303:before {
+    content: "\e636";
+    font-size: 18px;
+}
+.iconfont{
+  font-size: 14px;
+}
+
+.return{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: left;
+    background: #403d3d;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+}
+.return .icon-fanhui{
+
+}
+.return .return{
+
+}
+
+
+#imghead{
+        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=image);
+}
+
+
+
+/* 点击显示详细信息 */
+.displayPic{
+  width:90%;
+  margin-left:5%;
+  padding-bottom: 60px;
+  margin-top: 40px;
+}
+.displayPic .name{
+       font-size: 16px;
+    text-align: center;
+}
+.displayPic .imgGroup img{
+  width:100%;
+}
+.Contestant{
+       font-size: 16px;
+    text-align: center;
+}
+.detailIntro{
+}
+.detailIntro li{
+}
+.detailIntro li span{
+      font-size: 12px;
+}
+.detailIntro li span:nth-child(1){
+     font-weight:bold;
+}
+.detailIntro button{
+}
+button.voteForTa {
+    padding: 5px 10px;
+    background: #c12929;
+    display: block;
+    color: #fff;
+}
